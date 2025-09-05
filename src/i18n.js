@@ -38,6 +38,7 @@ const userLocale = navigator.language || navigator.userLanguage;
 const shortLocale = userLocale.split('-')[0]; // 'es', 'en', 'it'
 const supportedLocales = ['es', 'en', 'it'];
 const finalLocale = supportedLocales.includes(shortLocale) ? shortLocale : 'es';
+console.log("hola te paso tu navigator.language y navigator.userLanguage",navigator.language,navigator.userLanguage)
 
 // Crear instancia de i18n
 const i18n = createI18n({
